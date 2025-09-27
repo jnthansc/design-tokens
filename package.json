@@ -1,0 +1,41 @@
+{
+  "name": "@company/design-tokens",
+  "version": "1.0.0",
+  "description": "Design tokens for company applications",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run build:tokens",
+    "build:tokens": "node build-tokens.js",
+    "clean": "rimraf dist",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.ts",
+    "validate": "node scripts/validate-tokens.js",
+    "release": "npm run build && npm run test && npm run validate"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "eslint": "^8.57.1",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.10",
+    "typescript": "^5.9.2"
+  },
+  "publishConfig": {
+    "registry": "https://your-private-registry.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-company/design-tokens.git"
+  },
+  "keywords": [
+    "design-tokens",
+    "design-system",
+    "tokens"
+  ],
+  "author": "Your Company",
+  "license": "MIT"
+}
