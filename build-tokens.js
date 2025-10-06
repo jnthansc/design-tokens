@@ -53,6 +53,15 @@ const sd = new StyleDictionary({
             return token.path[0] === 'semantic';
           },
         },
+        
+        // 🚀 FUTURE: Component layer example
+        // {
+        //   destination: 'component.ts',
+        //   format: 'typescript/default-export', 
+        //   filter: (token) => {
+        //     return token.path[0] === 'component';
+        //   },
+        // },
       ],
     },
   },
