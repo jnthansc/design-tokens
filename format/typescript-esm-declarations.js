@@ -157,12 +157,18 @@ export const typescriptEsmDeclarations = async ({
   // Generate import statements for external references
   const imports = generateImports(externalRefs)
   
+  // Generate TypeScript types
+  const typeDefinitions = generateTypeDefinitions(nestedTokens, currentLayer, externalRefs)
+  
   // Convert object to string and process JS expressions
   let objectString = JSON.stringify(nestedTokens, null, 2)
   objectString = convertToJsExpressions(objectString)
 
   const output = (await fileHeader({file})) + 
-`${imports}export default ${objectString};
+`${imports}${typeDefinitions}const ${currentLayer}Tokens: ${capitalize(currentLayer)}TokensType = ${objectString};
+
+export type ${capitalize(currentLayer)}Tokens = ${capitalize(currentLayer)}TokensType;
+export default ${currentLayer}Tokens;
 `
   // return prettified
   return format(output, {parser: 'typescript', printWidth: 500, ...options?.prettier})
@@ -188,10 +194,54 @@ const generateImports = (externalRefs) => {
   if (externalRefs.size === 0) return ''
   
   const imports = Array.from(externalRefs).map(layer => {
-    return `import ${layer}Tokens from './${layer}.js';`
+    return `import ${layer}Tokens, { type ${capitalize(layer)}Tokens } from './${layer}.js';`
   }).join('\n')
   
   return imports + '\n\n'
+}
+
+/**
+ * Generate TypeScript type definitions for tokens
+ * @param {Object} nestedTokens - Nested token object 
+ * @param {string} currentLayer - Current layer name
+ * @param {Set} externalRefs - Set of external references
+ * @returns {string} Type definitions
+ */
+const generateTypeDefinitions = (nestedTokens, currentLayer, externalRefs) => {
+  // Create a simplified structure for type generation (replace all values with 'string')
+  const typeStructure = createTypeStructure(nestedTokens)
+  
+  // Generate the interface using jsonToTypes
+  const interfaceName = `${capitalize(currentLayer)}TokensType`
+  const typeDefinition = jsonToTypes(typeStructure, '  ', interfaceName)
+  
+  return typeDefinition + '\n'
+}
+
+/**
+ * Create a simplified structure for type generation
+ * @param {Object} obj - Nested tokens object
+ * @returns {Object} Simplified structure with string types
+ */
+const createTypeStructure = (obj) => {
+  if (typeof obj !== 'object' || obj === null) {
+    return 'string' // All token values are strings in the end
+  }
+  
+  const result = {}
+  for (const [key, value] of Object.entries(obj)) {
+    result[key] = createTypeStructure(value)
+  }
+  return result
+}
+
+/**
+ * Capitalize first letter of string
+ * @param {string} str - String to capitalize
+ * @returns {string} Capitalized string
+ */
+const capitalize = (str) => {
+  return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
 /**

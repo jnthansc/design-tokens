@@ -2,9 +2,196 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-import globalTokens from "./global.js";
+import globalTokens, { type GlobalTokens } from "./global.js";
 
-export default {
+export type SemanticTokensType = {
+  color: {
+    base: {
+      surface: string;
+      onSurface: string;
+      primary: string;
+      info: string;
+      success: string;
+      warning: string;
+      error: string;
+    };
+    surface: {
+      neutral: {
+        default: string;
+        hover: string;
+        active: string;
+        subdued: {
+          default: string;
+        };
+        muted: {
+          default: string;
+          hover: string;
+          active: string;
+        };
+      };
+      primary: {
+        default: string;
+        hover: string;
+        active: string;
+        subdued: {
+          default: string;
+        };
+        muted: {
+          default: string;
+          hover: string;
+          active: string;
+        };
+      };
+      info: {
+        default: string;
+        hover: string;
+        active: string;
+        subdued: {
+          default: string;
+        };
+        muted: {
+          default: string;
+          hover: string;
+          active: string;
+        };
+      };
+      success: {
+        default: string;
+        hover: string;
+        active: string;
+        subdued: {
+          default: string;
+        };
+        muted: {
+          default: string;
+          hover: string;
+          active: string;
+        };
+      };
+      warning: {
+        default: string;
+        hover: string;
+        active: string;
+        subdued: {
+          default: string;
+        };
+        muted: {
+          default: string;
+          hover: string;
+          active: string;
+        };
+      };
+      error: {
+        default: string;
+        hover: string;
+        active: string;
+        subdued: {
+          default: string;
+        };
+        muted: {
+          default: string;
+          hover: string;
+          active: string;
+        };
+      };
+      disabled: {
+        default: string;
+        inversed: string;
+      };
+    };
+    content: {
+      neutral: {
+        default: string;
+        hover: string;
+        active: string;
+        subdued: {
+          default: string;
+        };
+        inversed: {
+          default: string;
+        };
+      };
+      disabled: {
+        default: string;
+        inversed: string;
+      };
+      primary: {
+        default: string;
+        hover: string;
+        active: string;
+        subdued: {
+          default: string;
+        };
+      };
+      info: {
+        default: string;
+        hover: string;
+        active: string;
+        subdued: {
+          default: string;
+        };
+      };
+      success: {
+        default: string;
+        hover: string;
+        active: string;
+        subdued: {
+          default: string;
+        };
+      };
+      warning: {
+        default: string;
+        hover: string;
+        active: string;
+        subdued: {
+          default: string;
+        };
+      };
+      error: {
+        default: string;
+        hover: string;
+        active: string;
+        subdued: {
+          default: string;
+        };
+      };
+    };
+    border: {
+      neutral: {
+        default: string;
+        subdued: string;
+        muted: string;
+      };
+      primary: {
+        default: string;
+        subdued: string;
+        muted: string;
+      };
+      info: {
+        default: string;
+        subdued: string;
+        muted: string;
+      };
+      success: {
+        default: string;
+        subdued: string;
+        muted: string;
+      };
+      warning: {
+        default: string;
+        subdued: string;
+        muted: string;
+      };
+      error: {
+        default: string;
+        subdued: string;
+        muted: string;
+      };
+    };
+  };
+};
+
+const semanticTokens: SemanticTokensType = {
   color: {
     base: {
       surface: globalTokens.color.palette.white,
@@ -190,3 +377,6 @@ export default {
     },
   },
 };
+
+export type SemanticTokens = SemanticTokensType;
+export default semanticTokens;

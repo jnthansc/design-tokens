@@ -2,7 +2,406 @@
  * Do not edit directly, this file was auto-generated.
  */
 
-export default {
+export type GlobalTokensType = {
+  color: {
+    palette: {
+      white: string;
+      grey: {
+        grey10: string;
+        grey20: string;
+        grey30: string;
+        grey40: string;
+        grey50: string;
+        grey60: string;
+        grey70: string;
+        grey80: string;
+        grey100: string;
+        grey110: string;
+        grey120: string;
+        grey1000: string;
+      };
+      simba: {
+        simba10: string;
+        simba20: string;
+        simba30: string;
+        simba40: string;
+        simba50: string;
+        simba60: string;
+        simba70: string;
+        simba80: string;
+        simba100: string;
+        simba110: string;
+        simba120: string;
+        simba1000: string;
+      };
+      blue: {
+        blue10: string;
+        blue20: string;
+        blue30: string;
+        blue40: string;
+        blue50: string;
+        blue60: string;
+        blue70: string;
+        blue80: string;
+        blue100: string;
+        blue110: string;
+        blue120: string;
+        blue1000: string;
+      };
+      green: {
+        green10: string;
+        green20: string;
+        green30: string;
+        green40: string;
+        green50: string;
+        green60: string;
+        green70: string;
+        green80: string;
+        green100: string;
+        green110: string;
+        green120: string;
+        green1000: string;
+      };
+      orange: {
+        orange10: string;
+        orange20: string;
+        orange30: string;
+        orange40: string;
+        orange50: string;
+        orange60: string;
+        orange70: string;
+        orange80: string;
+        orange100: string;
+        orange110: string;
+        orange120: string;
+        orange1000: string;
+      };
+      red: {
+        red10: string;
+        red20: string;
+        red30: string;
+        red40: string;
+        red50: string;
+        red60: string;
+        red70: string;
+        red80: string;
+        red100: string;
+        red110: string;
+        red120: string;
+        red1000: string;
+      };
+    };
+  };
+  shadow: {
+    "drop shadow": {
+      "dropshadow-xs": {
+        color: string;
+        type: string;
+        blur: string;
+        spread: string;
+        offsetX: string;
+        offsetY: string;
+      };
+      "dropshadow-s": {
+        color: string;
+        type: string;
+        blur: string;
+        spread: string;
+        offsetX: string;
+        offsetY: string;
+      };
+      "dropshadow-m": {
+        color: string;
+        type: string;
+        blur: string;
+        spread: string;
+        offsetX: string;
+        offsetY: string;
+      };
+      "dropshadow-l": {
+        color: string;
+        type: string;
+        blur: string;
+        spread: string;
+        offsetX: string;
+        offsetY: string;
+      };
+      "dropshadow-xl": {
+        color: string;
+        type: string;
+        blur: string;
+        spread: string;
+        offsetX: string;
+        offsetY: string;
+      };
+      inversed: {
+        "dropshadow-inversed-xs": {
+          color: string;
+          type: string;
+          blur: string;
+          spread: string;
+          offsetX: string;
+          offsetY: string;
+        };
+        "dropshadow-inversed-s": {
+          color: string;
+          type: string;
+          blur: string;
+          spread: string;
+          offsetX: string;
+          offsetY: string;
+        };
+        "dropshadow-inversed-m": {
+          color: string;
+          type: string;
+          blur: string;
+          spread: string;
+          offsetX: string;
+          offsetY: string;
+        };
+        "dropshadow-inversed-l": {
+          color: string;
+          type: string;
+          blur: string;
+          spread: string;
+          offsetX: string;
+          offsetY: string;
+        };
+        "dropshadow-inversed-xl": {
+          color: string;
+          type: string;
+          blur: string;
+          spread: string;
+          offsetX: string;
+          offsetY: string;
+        };
+      };
+    };
+    "inner shadow": {
+      "innershadow-xs": {
+        color: string;
+        type: string;
+        blur: string;
+        spread: string;
+        offsetX: string;
+        offsetY: string;
+      };
+      "innershadow-s": {
+        color: string;
+        type: string;
+        blur: string;
+        spread: string;
+        offsetX: string;
+        offsetY: string;
+      };
+      "innershadow-m": {
+        color: string;
+        type: string;
+        blur: string;
+        spread: string;
+        offsetX: string;
+        offsetY: string;
+      };
+      "innershadow-l": {
+        color: string;
+        type: string;
+        blur: string;
+        spread: string;
+        offsetX: string;
+        offsetY: string;
+      };
+      "innershadow-xl": {
+        color: string;
+        type: string;
+        blur: string;
+        spread: string;
+        offsetX: string;
+        offsetY: string;
+      };
+    };
+  };
+  fontFamilies: {
+    inter: string;
+  };
+  lineHeights: {
+    "0": string;
+    "1": string;
+    "2": string;
+    "3": string;
+    "4": string;
+    "5": string;
+    "6": string;
+    "7": string;
+    "8": string;
+    "9": string;
+  };
+  fontWeights: {
+    "inter-0": string;
+    "inter-1": string;
+  };
+  fontSize: {
+    "3x-large": string;
+    "2x-large": string;
+    "x-large": string;
+    large: string;
+    regular: string;
+    small: string;
+    "x-small": string;
+  };
+  letterSpacing: {
+    "0": string;
+    "1": string;
+    "2": string;
+    "3": string;
+    "4": string;
+    "5": string;
+    "6": string;
+    "7": string;
+    "8": string;
+    "9": string;
+  };
+  paragraphSpacing: {
+    "0": string;
+    "1": string;
+    "2": string;
+    "3": string;
+    "4": string;
+    "5": string;
+    "6": string;
+    "7": string;
+    "8": string;
+    "9": string;
+  };
+  textstyle: {
+    heading: {
+      "heading-2": {
+        fontFamily: string;
+        fontWeight: string;
+        lineHeight: string;
+        fontSize: string;
+        letterSpacing: string;
+        paragraphSpacing: string;
+        paragraphIndent: string;
+        textCase: string;
+        textDecoration: string;
+      };
+      "heading-1": {
+        fontFamily: string;
+        fontWeight: string;
+        lineHeight: string;
+        fontSize: string;
+        letterSpacing: string;
+        paragraphSpacing: string;
+        paragraphIndent: string;
+        textCase: string;
+        textDecoration: string;
+      };
+      "heading-3": {
+        fontFamily: string;
+        fontWeight: string;
+        lineHeight: string;
+        fontSize: string;
+        letterSpacing: string;
+        paragraphSpacing: string;
+        paragraphIndent: string;
+        textCase: string;
+        textDecoration: string;
+      };
+      "heading-4": {
+        fontFamily: string;
+        fontWeight: string;
+        lineHeight: string;
+        fontSize: string;
+        letterSpacing: string;
+        paragraphSpacing: string;
+        paragraphIndent: string;
+        textCase: string;
+        textDecoration: string;
+      };
+      "heading-5": {
+        fontFamily: string;
+        fontWeight: string;
+        lineHeight: string;
+        fontSize: string;
+        letterSpacing: string;
+        paragraphSpacing: string;
+        paragraphIndent: string;
+        textCase: string;
+        textDecoration: string;
+      };
+      "heading-6": {
+        fontFamily: string;
+        fontWeight: string;
+        lineHeight: string;
+        fontSize: string;
+        letterSpacing: string;
+        paragraphSpacing: string;
+        paragraphIndent: string;
+        textCase: string;
+        textDecoration: string;
+      };
+    };
+    body: {
+      "body-small": {
+        fontFamily: string;
+        fontWeight: string;
+        lineHeight: string;
+        fontSize: string;
+        letterSpacing: string;
+        paragraphSpacing: string;
+        paragraphIndent: string;
+        textCase: string;
+        textDecoration: string;
+      };
+      "body-regular": {
+        fontFamily: string;
+        fontWeight: string;
+        lineHeight: string;
+        fontSize: string;
+        letterSpacing: string;
+        paragraphSpacing: string;
+        paragraphIndent: string;
+        textCase: string;
+        textDecoration: string;
+      };
+    };
+    label: {
+      "label-small": {
+        fontFamily: string;
+        fontWeight: string;
+        lineHeight: string;
+        fontSize: string;
+        letterSpacing: string;
+        paragraphSpacing: string;
+        paragraphIndent: string;
+        textCase: string;
+        textDecoration: string;
+      };
+      "label-regular": {
+        fontFamily: string;
+        fontWeight: string;
+        lineHeight: string;
+        fontSize: string;
+        letterSpacing: string;
+        paragraphSpacing: string;
+        paragraphIndent: string;
+        textCase: string;
+        textDecoration: string;
+      };
+    };
+  };
+  textCase: {
+    none: string;
+  };
+  textDecoration: {
+    none: string;
+  };
+  paragraphIndent: {
+    "0": string;
+  };
+};
+
+const globalTokens: GlobalTokensType = {
   color: {
     palette: {
       white: "#ffffff",
@@ -400,3 +799,6 @@ export default {
     "0": "0px",
   },
 };
+
+export type GlobalTokens = GlobalTokensType;
+export default globalTokens;
