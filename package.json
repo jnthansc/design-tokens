@@ -1,0 +1,27 @@
+{
+  "name": "design-tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@tokens-studio/sd-transforms": "^2.0.1",
+    "prettier": "^3.6.2",
+    "style-dictionary": "^5.1.0"
+  },
+  "scripts": {
+    "build": "node build-tokens.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnthansc/design-tokens.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jnthansc/design-tokens/issues"
+  },
+  "homepage": "https://github.com/jnthansc/design-tokens#readme"
+}
