@@ -1,0 +1,13 @@
+{
+  "name": "design-tokens",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "preprocess": "node preprocess-tokens.js",
+    "build": "npm run preprocess && terrazzo build"
+  },
+  "devDependencies": {
+    "@terrazzo/cli": "latest"
+  }
+}
+

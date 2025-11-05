@@ -1,0 +1,15 @@
+# Build output
+dist/
+
+# Terrazzo temp files
+.terrazzo/
+
+# Node modules
+node_modules/
+
+# npm
+package-lock.json
+npm-debug.log*
+
+# OS files
+.DS_Store
